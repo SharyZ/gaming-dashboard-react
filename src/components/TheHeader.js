@@ -1,48 +1,34 @@
+import { TheHeaderList } from "./TheHeaderList"
+
+const HEADER_LIST_ITEM_CLASSES = "text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
+
+const headerListItems = [
+  {
+    classes: HEADER_LIST_ITEM_CLASSES,
+    label: "Game",
+  },
+  {
+    classes: HEADER_LIST_ITEM_CLASSES,
+    label: "Live Score",
+  },
+  {
+    classes: HEADER_LIST_ITEM_CLASSES,
+    label: "Statistics",
+  },
+  {
+    classes: HEADER_LIST_ITEM_CLASSES,
+    label: "Analytics",
+  },
+  {
+    classes: HEADER_LIST_ITEM_CLASSES,
+    label: "Forecasts",
+  },
+]
+
 export const TheHeader = () => {
   return (
     <header className="hidden pb-[25px] md:block">
-      <ul className="flex items-center space-x-[38px]">
-        <li>
-          <a
-            href="/"
-            className="text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
-          >
-            Game
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
-          >
-            Live score
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
-          >
-            Statistics
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
-          >
-            Analitics
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="text-[17px] font-medium leading-[22px] text-[#a0a8b1] duration-300 hover:text-primary"
-          >
-            Forecasts
-          </a>
-        </li>
-      </ul>
+      <TheHeaderList listItems={headerListItems} />
     </header>
   )
 }
