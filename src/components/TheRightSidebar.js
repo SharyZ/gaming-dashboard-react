@@ -1,6 +1,35 @@
 import { BellIcon } from "@heroicons/react/outline"
 import { StarIcon } from "@heroicons/react/solid"
 
+import { LiveGamesList } from "./LiveGamesList"
+
+const liveGames = [
+  {
+    id: 0,
+    cover: 'https://fakeimg.pl/70x62/162440?font=bebas',
+    title: 'Ghost of Tsushima',
+    category: 'War Battle'
+  },
+  {
+    id: 1,
+    cover: 'https://fakeimg.pl/70x62/162440?font=bebas',
+    title: 'Need For Speed',
+    category: 'Race'
+  },
+  {
+    id: 2,
+    cover: 'https://fakeimg.pl/70x62/162440?font=bebas',
+    title: 'The Witcher Hunt',
+    category: 'Action RPG'
+  },
+  {
+    id: 3,
+    cover: 'https://fakeimg.pl/70x62/162440?font=bebas',
+    title: 'Free Fire',
+    category: 'War Battle'
+  },
+]
+
 export const TheRightSidebar = () => {
   return (
     <aside
@@ -23,60 +52,7 @@ export const TheRightSidebar = () => {
         <div className="mb-[20px]">
           <h2>Live Game</h2>
         </div>
-        <div className="flex flex-col space-y-[15px]">
-          <a href="/" className="flex items-center space-x-[10px]">
-            <img
-              src="https://fakeimg.pl/70x62/162440?font=bebas"
-              alt=""
-              className="rounded-[10px] shadow-gray"
-            />
-            <div>
-              <h4 className="mb-[6px]">The Witcher Hunt</h4>
-              <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">
-                War Battle
-              </p>
-            </div>
-          </a>
-          <a href="/" className="flex items-center space-x-[10px]">
-            <img
-              src="https://fakeimg.pl/70x62/162440?font=bebas"
-              alt=""
-              className="rounded-[10px] shadow-gray"
-            />
-            <div>
-              <h4 className="mb-[6px]">PUBG</h4>
-              <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">
-                War Battle
-              </p>
-            </div>
-          </a>
-          <a href="/" className="flex items-center space-x-[10px]">
-            <img
-              src="https://fakeimg.pl/70x62/162440?font=bebas"
-              alt=""
-              className="rounded-[10px] shadow-gray"
-            />
-            <div>
-              <h4 className="mb-[6px]">Ghost of Tsushima</h4>
-              <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">
-                War Battle
-              </p>
-            </div>
-          </a>
-          <a href="/" className="flex items-center space-x-[10px]">
-            <img
-              src="https://fakeimg.pl/70x62/162440?font=bebas"
-              alt=""
-              className="rounded-[10px] shadow-gray"
-            />
-            <div>
-              <h4 className="mb-[6px]">Free Fire</h4>
-              <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">
-                War Battle
-              </p>
-            </div>
-          </a>
-        </div>
+        <LiveGamesList liveGames={liveGames} />
       </div>
       <div>
         <img
