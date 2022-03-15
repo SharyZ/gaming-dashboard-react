@@ -1,6 +1,7 @@
 import { BellIcon } from "@heroicons/react/outline"
 import { StarIcon } from "@heroicons/react/solid"
 
+import { Section } from "./Section"
 import { LiveGamesList } from "./LiveGamesList"
 
 const liveGames = [
@@ -49,10 +50,9 @@ export const TheRightSidebar = () => {
         </button>
       </div>
       <div>
-        <div className="mb-[20px]">
-          <h2>Live Game</h2>
-        </div>
-        <LiveGamesList liveGames={liveGames} />
+        <Section title="Live Game">
+          <LiveGamesList liveGames={liveGames} />
+        </Section>
       </div>
       <div>
         <img

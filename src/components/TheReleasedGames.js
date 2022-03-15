@@ -1,4 +1,5 @@
 import { ReleasedGamesList } from "./ReleasedGamesList"
+import { Section } from "./Section"
 
 const releasedGames = [
   {
@@ -61,17 +62,8 @@ const releasedGames = [
 
 export const TheReleasedGames = () => {
   return (
-    <section className="mb-[30px]">
-      <div className="mb-[25px] flex items-center justify-between">
-        <h2>New Released Games</h2>
-        <a
-          href="/"
-          className="text-[#a0a8b1] duration-300 hover:text-primary"
-        >
-          See All
-        </a>
-      </div>
+    <Section title="New Released Games" link="/">
       <ReleasedGamesList releasedGames={releasedGames} />
-    </section>
+    </Section>
   )
 }

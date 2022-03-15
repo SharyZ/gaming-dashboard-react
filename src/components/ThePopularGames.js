@@ -1,4 +1,5 @@
 import { PopularGamesList } from "./PopularGamesList"
+import { Section } from "./Section"
 
 const popularGames = [
   {
@@ -40,17 +41,8 @@ const popularGames = [
 
 export const ThePopularGames = () => {
   return (
-    <section className="mb-[30px]">
-      <div className="mb-[25px] flex items-center justify-between">
-        <h2>Most Popular Games</h2>
-        <a
-          href="/"
-          className="text-[#a0a8b1] duration-300 hover:text-primary"
-        >
-          See All
-        </a>
-      </div>
+    <Section title="Popular Games" link="/">
       <PopularGamesList popularGames={popularGames} />
-    </section>
+    </Section>
   )
 }
