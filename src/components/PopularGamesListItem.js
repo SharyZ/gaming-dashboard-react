@@ -14,7 +14,7 @@ export const PopularGamesListItem = ({ cover, title, rating, category }) => {
       <h3 className="text-white line-clamp-2">{title}</h3>
       <p className="flex items-center">
         <StarIcon className="text-primary w-4" />
-        <span className="ml-[5px] line-clamp-1">{rating} / 10 {category}</span>
+        <span className="ml-[5px] line-clamp-1">{rating} / 5 {category}</span>
       </p>
     </a>
   )

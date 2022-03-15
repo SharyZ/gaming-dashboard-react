@@ -50,7 +50,7 @@ export const TheRightSidebar = () => {
         </button>
       </div>
       <div>
-        <Section title="Live Game">
+        <Section title="Live Games">
           <LiveGamesList liveGames={liveGames} />
         </Section>
       </div>
