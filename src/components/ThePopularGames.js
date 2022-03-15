@@ -1,4 +1,42 @@
-import { StarIcon } from "@heroicons/react/solid"
+import { PopularGamesList } from "./PopularGamesList"
+
+const popularGames = [
+  {
+    id: 0,
+    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
+    title: 'Sniper 2',
+    rating: 4.5,
+    category: 'FPS Shooter',
+  },
+  {
+    id: 1,
+    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
+    title: 'Motor Race',
+    rating: 4,
+    category: 'Race',
+  },
+  {
+    id: 2,
+    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
+    title: 'Witcher Hunt',
+    rating: 5,
+    category: 'Action RPG',
+  },
+  {
+    id: 3,
+    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
+    title: 'PUBG War',
+    rating: 4.5,
+    category: 'Battle Royale',
+  },
+  {
+    id: 4,
+    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
+    title: 'Sniper',
+    rating: 5,
+    category: 'FSP Shooter',
+  },
+]
 
 export const ThePopularGames = () => {
   return (
@@ -12,83 +50,7 @@ export const ThePopularGames = () => {
           See All
         </a>
       </div>
-      <div className="grid grid-cols-popular-games items-stretch gap-[20px]">
-        <a
-          href="/"
-          className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
-          style={{
-            backgroundImage: `url('https://fakeimg.pl/200x250/162440?font=bebas')`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-white line-clamp-2">Sniper 2</h3>
-          <p className="flex items-center">
-            <StarIcon className="text-primary w-4" />
-            <span className="ml-[5px]">8.6 / 10 Action-rpg</span>
-          </p>
-        </a>
-        <a
-          href="/"
-          className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
-          style={{
-            backgroundImage: `url('https://fakeimg.pl/200x250/162440?font=bebas')`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-white line-clamp-2">Motor Race</h3>
-          <p className="flex items-center">
-            <StarIcon className="text-primary w-4" />
-            <span className="ml-[5px]">8.6 / 10 Action-rpg</span>
-          </p>
-        </a>
-        <a
-          href="/"
-          className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
-          style={{
-            backgroundImage: `url('https://fakeimg.pl/200x250/162440?font=bebas')`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-white line-clamp-2">Witcher Hunt</h3>
-          <p className="flex items-center">
-            <StarIcon className="text-primary w-4" />
-            <span className="ml-[5px]">8.6 / 10 Action-rpg</span>
-          </p>
-        </a>
-        <a
-          href="/"
-          className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
-          style={{
-            backgroundImage: `url('https://fakeimg.pl/200x250/162440?font=bebas')`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-white line-clamp-2">PUBG War</h3>
-          <p className="flex items-center">
-            <StarIcon className="text-primary w-4" />
-            <span className="ml-[5px]">8.6 / 10 Action-rpg</span>
-          </p>
-        </a>
-        <a
-          href="/"
-          className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
-          style={{
-            backgroundImage: `url('https://fakeimg.pl/200x250/162440?font=bebas')`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-white line-clamp-2">Sniper 2</h3>
-          <p className="flex items-center">
-            <StarIcon className="text-primary w-4" />
-            <span className="ml-[5px]">8.6 / 10 Action-rpg</span>
-          </p>
-        </a>
-      </div>
+      <PopularGamesList popularGames={popularGames} />
     </section>
   )
 }
