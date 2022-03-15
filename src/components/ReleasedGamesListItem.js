@@ -4,7 +4,7 @@ export const ReleasedGamesListItem = ({ cover, title, rating, category }) => {
   return (
     <a
       href="/"
-      className="flex space-x-[10px] rounded-[10px] shadow-gray"
+      className="flex space-x-[10px] rounded-[10px] shadow-gray p-1 items-center"
     >
       <img
         src={cover}
