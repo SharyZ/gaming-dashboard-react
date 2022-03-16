@@ -1,4 +1,5 @@
-import { GamesList } from "../components/GamesList"
+import { GamesList, TheHeader } from "../components"
+
 
 const games = [
   {
@@ -78,6 +79,7 @@ export const Games = () => {
     <main
       className="container mx-auto flex-1 rounded-[40px] bg-[#fafafa] px-[30px] pt-[50px] pb-[40px]"
     >
+      <TheHeader />
       <GamesList games={games} />
     </main>
   )

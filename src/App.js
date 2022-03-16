@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 import {
-  TheLeftSidebar, TheMain, TheRightSidebar
-} from "./components";
+  TheLeftSidebar, TheRightSidebar
+} from "./components"
 
-import { GameDetail, Games } from "./pages";
+import { Main, Games, GameDetail } from "./pages"
 
 function App() {
   return (
@@ -12,14 +12,14 @@ function App() {
       <Router>
         <TheLeftSidebar />
         <Routes>
-          <Route path="/" element={<TheMain />} />
+          <Route path="/" element={<Main />} />
           <Route path="games" element={<Games />} />
           <Route path="games/:gameId" element={<GameDetail />} />
         </Routes>
         <TheRightSidebar />
       </Router>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
