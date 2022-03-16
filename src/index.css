@@ -12,6 +12,10 @@
     @apply font-semibold text-heading;
   }
 
+  h1 {
+    @apply text-[42px] leading-[48px];
+  }
+
   h2 {
     @apply text-[24px] leading-[25px];
   }
