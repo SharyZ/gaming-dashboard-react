@@ -1,9 +1,10 @@
 import { StarIcon } from "@heroicons/react/solid"
+import { Link } from "react-router-dom"
 
-export const ReleasedGamesListItem = ({ cover, title, rating, category }) => {
+export const ReleasedGamesListItem = ({ id, cover, title, rating, category }) => {
   return (
-    <a
-      href="/"
+    <Link
+      to={`games/${id}`}
       className="flex space-x-[10px] rounded-[10px] shadow-gray p-1 items-center"
     >
       <img
@@ -27,6 +28,6 @@ export const ReleasedGamesListItem = ({ cover, title, rating, category }) => {
           <StarIcon className="text-primary w-4" />
         </p>
       </div>
-    </a>
+    </Link>
   )
 }

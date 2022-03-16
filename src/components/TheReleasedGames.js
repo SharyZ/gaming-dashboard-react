@@ -62,7 +62,7 @@ const releasedGames = [
 
 export const TheReleasedGames = () => {
   return (
-    <Section title="New Released Games" link="/">
+    <Section title="New Released Games" link="games">
       <ReleasedGamesList releasedGames={releasedGames} />
     </Section>
   )

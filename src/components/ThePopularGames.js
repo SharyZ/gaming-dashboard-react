@@ -41,7 +41,7 @@ const popularGames = [
 
 export const ThePopularGames = () => {
   return (
-    <Section title="Popular Games" link="/">
+    <Section title="Popular Games" link="games">
       <PopularGamesList popularGames={popularGames} />
     </Section>
   )

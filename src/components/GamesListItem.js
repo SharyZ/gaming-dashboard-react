@@ -1,10 +1,10 @@
 import { StarIcon } from "@heroicons/react/solid"
 import { Link } from "react-router-dom"
 
-export const PopularGamesListItem = ({ id, cover, title, rating, category }) => {
+export const GamesListItem = ({ id, cover, title, rating, category }) => {
   return (
     <Link
-      to={`games/${id}`}
+      to={`${id}`}
       className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray"
       style={{
         backgroundImage: `url(${cover})`,
