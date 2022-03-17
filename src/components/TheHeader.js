@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { TheHeaderList } from "./TheHeaderList";
 
 const HEADER_LIST_ITEM_CLASSES =
@@ -28,8 +30,18 @@ const headerListItems = [
 
 export const TheHeader = () => {
   return (
-    <header className="hidden pb-[25px] md:block">
+    <header className="hidden pb-[25px] md:flex md:items-center md:justify-between">
       <TheHeaderList listItems={headerListItems} />
+      <div className="flex items-center justify-between">
+        <Link to="/" className="inline-flex items-center space-x-[14px]">
+          <img
+            src="https://fakeimg.pl/40/162440?font=bebas"
+            alt=""
+            className="rounded-full"
+          />
+          <h4>William Johnson</h4>
+        </Link>
+      </div>
     </header>
   );
 };

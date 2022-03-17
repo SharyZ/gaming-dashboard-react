@@ -1,10 +1,8 @@
-import { ChevronLeftIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
-import { useNavigate } from "react-router-dom";
+
+import { TheHeader } from "../components";
 
 export const GameDetail = () => {
-  let navigate = useNavigate();
-
   return (
     <main
       className="flex flex-1 flex-col justify-between px-[30px] pt-[50px] pb-[40px]"
@@ -14,15 +12,7 @@ export const GameDetail = () => {
         backgroundPosition: "center",
       }}
     >
-      <div>
-        <button
-          onClick={() => navigate(-1)}
-          className="inline-flex items-center space-x-2 rounded p-[10px] text-white focus:ring-2"
-        >
-          <ChevronLeftIcon className="h-5 w-5" />
-          <span>Back</span>
-        </button>
-      </div>
+      <TheHeader />
       <div className="max-w-[768px]">
         <div className="mb-[12px] flex flex-col space-y-[8px]">
           <h1 className="text-white">Need For Speed</h1>
