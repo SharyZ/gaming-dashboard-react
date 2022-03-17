@@ -1,4 +1,4 @@
-import { SectionHeading } from "./SectionHeading"
+import { SectionHeading } from "./SectionHeading";
 
 export const Section = ({ title, link, children }) => {
   return (
@@ -6,5 +6,5 @@ export const Section = ({ title, link, children }) => {
       <SectionHeading title={title} link={link} />
       {children}
     </section>
-  )
-}
+  );
+};

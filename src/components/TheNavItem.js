@@ -3,5 +3,5 @@ export const TheNavItem = ({ classes, icon }) => {
     <a className={classes} href="/">
       {icon}
     </a>
-  )
-}
+  );
+};

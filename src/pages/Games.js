@@ -1,86 +1,83 @@
-import { GamesList, TheHeader } from "../components"
-
+import { GamesList, TheHeader } from "../components";
 
 const games = [
   {
     id: 0,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Sniper 2',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Sniper 2",
     rating: 4.5,
-    category: 'FPS Shooter',
+    category: "FPS Shooter",
   },
   {
     id: 1,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Motor Race',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Motor Race",
     rating: 4,
-    category: 'Race',
+    category: "Race",
   },
   {
     id: 2,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Witcher Hunt',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Witcher Hunt",
     rating: 5,
-    category: 'Action RPG',
+    category: "Action RPG",
   },
   {
     id: 3,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'PUBG War',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "PUBG War",
     rating: 4.5,
-    category: 'Battle Royale',
+    category: "Battle Royale",
   },
   {
     id: 4,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Sniper',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Sniper",
     rating: 5,
-    category: 'FSP Shooter',
+    category: "FSP Shooter",
   },
   {
     id: 5,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Sniper 2',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Sniper 2",
     rating: 4.5,
-    category: 'FPS Shooter',
+    category: "FPS Shooter",
   },
   {
     id: 6,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Motor Race',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Motor Race",
     rating: 4,
-    category: 'Race',
+    category: "Race",
   },
   {
     id: 7,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Witcher Hunt',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Witcher Hunt",
     rating: 5,
-    category: 'Action RPG',
+    category: "Action RPG",
   },
   {
     id: 8,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'PUBG War',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "PUBG War",
     rating: 4.5,
-    category: 'Battle Royale',
+    category: "Battle Royale",
   },
   {
     id: 9,
-    cover: 'https://fakeimg.pl/200x250/162440?font=bebas',
-    title: 'Sniper',
+    cover: "https://fakeimg.pl/200x250/162440?font=bebas",
+    title: "Sniper",
     rating: 5,
-    category: 'FSP Shooter',
+    category: "FSP Shooter",
   },
-]
+];
 
 export const Games = () => {
   return (
-    <main
-      className="container mx-auto flex-1 rounded-[40px] bg-[#fafafa] px-[30px] pt-[50px] pb-[40px]"
-    >
+    <main className="container mx-auto flex-1 rounded-[40px] bg-[#fafafa] px-[30px] pt-[50px] pb-[40px] dark:bg-[#20232a]">
       <TheHeader />
       <GamesList games={games} />
     </main>
-  )
-}
+  );
+};

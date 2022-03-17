@@ -1,4 +1,4 @@
-import { ReleasedGamesListItem } from "./ReleasedGamesListItem"
+import { ReleasedGamesListItem } from "./ReleasedGamesListItem";
 
 export const ReleasedGamesList = ({ releasedGames }) => {
   return (
@@ -7,7 +7,9 @@ export const ReleasedGamesList = ({ releasedGames }) => {
         releasedGames.map((releasedGame) => (
           <ReleasedGamesListItem key={releasedGame.id} {...releasedGame} />
         ))
-      ) : <p>Games not found.</p>}
+      ) : (
+        <p>Games not found.</p>
+      )}
     </div>
-  )
-}
+  );
+};

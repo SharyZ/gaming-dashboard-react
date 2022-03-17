@@ -1,10 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import {
-  TheLeftSidebar, TheRightSidebar
-} from "./components"
+import { TheLeftSidebar, TheRightSidebar } from "./components";
 
-import { Main, Games, GameDetail } from "./pages"
+import { Main, Games, GameDetail } from "./pages";
 
 function App() {
   return (
@@ -19,7 +17,7 @@ function App() {
         <TheRightSidebar />
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

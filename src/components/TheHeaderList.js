@@ -1,4 +1,4 @@
-import { TheHeaderListItem } from "./TheHeaderListItem"
+import { TheHeaderListItem } from "./TheHeaderListItem";
 
 export const TheHeaderList = ({ listItems }) => {
   return (
@@ -7,5 +7,5 @@ export const TheHeaderList = ({ listItems }) => {
         <TheHeaderListItem key={index} {...listItem} />
       ))}
     </ul>
-  )
-}
+  );
+};

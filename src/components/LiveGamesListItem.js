@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const LiveGamesListItem = ({ id, cover, title, category }) => {
   return (
@@ -6,12 +6,14 @@ export const LiveGamesListItem = ({ id, cover, title, category }) => {
       <img
         src={cover}
         alt=""
-        className="rounded-[10px] shadow-gray"
+        className="rounded-[10px] shadow-gray dark:shadow-none"
       />
       <div>
         <h4 className="mb-[6px]">{title}</h4>
-        <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">{category}</p>
+        <p className="text-[12px] font-medium leading-[10px] text-[#a0a8b1]">
+          {category}
+        </p>
       </div>
     </Link>
-  )
-}
+  );
+};

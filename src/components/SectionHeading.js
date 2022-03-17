@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const SectionHeading = ({ title, link }) => {
   return (
@@ -13,5 +13,5 @@ export const SectionHeading = ({ title, link }) => {
         </Link>
       )}
     </div>
-  )
-}
+  );
+};

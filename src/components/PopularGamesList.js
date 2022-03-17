@@ -1,4 +1,4 @@
-import { PopularGamesListItem } from "./PopularGamesListItem"
+import { PopularGamesListItem } from "./PopularGamesListItem";
 
 export const PopularGamesList = ({ popularGames }) => {
   return (
@@ -7,7 +7,9 @@ export const PopularGamesList = ({ popularGames }) => {
         popularGames.map((popularGame) => (
           <PopularGamesListItem key={popularGame.id} {...popularGame} />
         ))
-      ) : <p>Games not found.</p>}
+      ) : (
+        <p>Games not found.</p>
+      )}
     </div>
-  )
-}
+  );
+};

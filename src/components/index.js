@@ -1,11 +1,11 @@
-import { TheLeftSidebar } from "./TheLeftSidebar"
-import { TheRightSidebar } from "./TheRightSidebar"
-import { TheHeader } from "./TheHeader"
-import { TheBanner } from "./TheBanner"
-import { ThePopularGames } from "./ThePopularGames"
-import { TheReleasedGames } from "./TheReleasedGames"
+import { TheLeftSidebar } from "./TheLeftSidebar";
+import { TheRightSidebar } from "./TheRightSidebar";
+import { TheHeader } from "./TheHeader";
+import { TheBanner } from "./TheBanner";
+import { ThePopularGames } from "./ThePopularGames";
+import { TheReleasedGames } from "./TheReleasedGames";
 
-import { GamesList } from "./GamesList"
+import { GamesList } from "./GamesList";
 
 export {
   TheLeftSidebar,
@@ -14,6 +14,5 @@ export {
   TheBanner,
   ThePopularGames,
   TheReleasedGames,
-
   GamesList,
-}
+};
