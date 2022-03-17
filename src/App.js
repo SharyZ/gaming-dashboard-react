@@ -14,7 +14,7 @@ function App() {
           <Route path="games" element={<Games />} />
           <Route path="games/:gameId" element={<GameDetail />} />
         </Routes>
-        <TheRightSidebar />
+        {/* <TheRightSidebar /> */}
       </Router>
     </>
   );

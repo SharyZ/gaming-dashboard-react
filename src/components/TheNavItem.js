@@ -1,7 +1,9 @@
-export const TheNavItem = ({ classes, icon }) => {
+import { NavLink } from "react-router-dom";
+
+export const TheNavItem = ({ icon, link }) => {
   return (
-    <a className={classes} href="/">
+    <NavLink className="nav-item" to={link}>
       {icon}
-    </a>
+    </NavLink>
   );
 };
