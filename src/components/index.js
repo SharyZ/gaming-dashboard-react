@@ -8,6 +8,7 @@ import { TheSignupForm } from "./TheSignupForm";
 import { TheLoginForm } from "./TheLoginForm";
 
 import { GamesList } from "./GamesList";
+import { Layout } from "./Layout";
 
 export {
   TheLeftSidebar,
@@ -19,4 +20,5 @@ export {
   TheSignupForm,
   TheLoginForm,
   GamesList,
+  Layout,
 };
