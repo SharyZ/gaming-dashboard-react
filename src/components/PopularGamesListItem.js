@@ -10,7 +10,7 @@ export const PopularGamesListItem = ({
 }) => {
   return (
     <Link
-      to={`games/${id}`}
+      to={`/games/${id}`}
       className="inline-flex h-[250px] flex-col justify-end rounded-[14px] px-[15px] py-[20px] text-white shadow-gray dark:shadow-none"
       style={{
         backgroundImage: `url(${cover})`,

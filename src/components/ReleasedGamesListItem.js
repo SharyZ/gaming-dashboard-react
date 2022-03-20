@@ -10,7 +10,7 @@ export const ReleasedGamesListItem = ({
 }) => {
   return (
     <Link
-      to={`games/${id}`}
+      to={`/games/${id}`}
       className="flex items-center space-x-[10px] rounded-[10px] p-1 shadow-gray dark:bg-[#191B1F] dark:shadow-none"
     >
       <img src={cover} alt="" className="rounded-[10px]" />

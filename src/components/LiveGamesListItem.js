@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const LiveGamesListItem = ({ id, cover, title, category }) => {
   return (
-    <Link to={`games/${id}`} className="flex items-center space-x-[10px]">
+    <Link to={`/games/${id}`} className="flex items-center space-x-[10px]">
       <img
         src={cover}
         alt=""
