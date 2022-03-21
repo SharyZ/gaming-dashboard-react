@@ -1,4 +1,4 @@
-import { GamesList, TheHeader, Layout } from "../components";
+import { GamesList, TheHeader } from "../components";
 
 const games = [
   {
@@ -75,9 +75,9 @@ const games = [
 
 export const Games = () => {
   return (
-    <Layout>
+    <>
       <TheHeader />
       <GamesList games={games} />
-    </Layout>
+    </>
   );
 };

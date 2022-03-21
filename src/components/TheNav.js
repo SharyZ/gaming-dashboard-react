@@ -10,7 +10,7 @@ import { TheNavItem } from "./TheNavItem";
 const navItems = [
   {
     icon: <HomeIcon className="h-6 w-6" />,
-    link: "/",
+    link: "home",
   },
   {
     icon: <ViewGridAddIcon className="h-6 w-6" />,

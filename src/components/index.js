@@ -9,6 +9,7 @@ import { TheLoginForm } from "./TheLoginForm";
 
 import { GamesList } from "./GamesList";
 import { Layout } from "./Layout";
+import { FullscreenLayout } from "./FullscreenLayout";
 
 export {
   TheLeftSidebar,
@@ -21,4 +22,5 @@ export {
   TheLoginForm,
   GamesList,
   Layout,
+  FullscreenLayout,
 };
